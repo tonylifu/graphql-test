@@ -2,7 +2,6 @@ package com.westartrek.graphql.test.api.service;
 
 import com.westartrek.graphql.test.api.entity.Person;
 
-import java.io.IOException;
 import java.util.List;
 
 public interface PersonService {
@@ -10,5 +9,5 @@ public interface PersonService {
 
     List<Person> findPersons();
 
-    Object getAll(String query);
+    Object getGraphQlQuery(String query);
 }

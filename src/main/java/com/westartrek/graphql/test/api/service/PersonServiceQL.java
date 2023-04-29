@@ -60,8 +60,7 @@ public class PersonServiceQL implements PersonService {
     }
 
     @Override
-    public Object getAll(String query) {
-        ExecutionResult executionResult = graphQL.execute(query);
-        return executionResult;
+    public Object getGraphQlQuery(String query) {
+        return graphQL.execute(query);
     }
 }

@@ -28,11 +28,11 @@ public class PersonController {
 
     @PostMapping("/getAll")
     public ResponseEntity<?> getAll(@RequestBody String query) {
-        return ResponseEntity.ok(personService.getAll(query));
+        return ResponseEntity.ok(personService.getGraphQlQuery(query));
     }
 
     @PostMapping("/getPersonByEmail")
     public ResponseEntity<?> getByEmail(@RequestBody String query) {
-        return ResponseEntity.ok(personService.getAll(query));
+        return ResponseEntity.ok(personService.getGraphQlQuery(query));
     }
 }
